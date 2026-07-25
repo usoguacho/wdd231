@@ -1,0 +1,94 @@
+{
+  "businesses": [
+    {
+      "id": 1,
+      "name": "Moana Kai Catering",
+      "tagline": "Island-style catering for every occasion",
+      "address": "4820 W Sahara Ave, Las Vegas, NV 89102",
+      "phone": "(702) 555-0142",
+      "email": "hello@moanakaicatering.com",
+      "url": "https://example.com/moana-kai",
+      "membershipLevel": 3
+    },
+    {
+      "id": 2,
+      "name": "Talanoa Real Estate Group",
+      "tagline": "Helping island families find home",
+      "address": "2300 W Sahara Ave, Las Vegas, NV 89102",
+      "phone": "(702) 555-0177",
+      "email": "info@talanoarealestate.com",
+      "url": "https://example.com/talanoa-real-estate",
+      "membershipLevel": 3
+    },
+    {
+      "id": 3,
+      "name": "Fetu Fresh Cuts Barbershop",
+      "tagline": "Clean fades, warm welcomes",
+      "address": "1105 E Charleston Blvd, Las Vegas, NV 89104",
+      "phone": "(702) 555-0193",
+      "email": "book@fetufreshcuts.com",
+      "url": "https://example.com/fetu-fresh-cuts",
+      "membershipLevel": 2
+    },
+    {
+      "id": 4,
+      "name": "Aloha Accounting & Tax",
+      "tagline": "Numbers you can trust, service you can feel",
+      "address": "3960 Howard Hughes Pkwy, Las Vegas, NV 89169",
+      "phone": "(702) 555-0164",
+      "email": "contact@alohaaccounting.com",
+      "url": "https://example.com/aloha-accounting",
+      "membershipLevel": 2
+    },
+    {
+      "id": 5,
+      "name": "Vaka Moving & Storage",
+      "tagline": "Moving your life, respectfully and on time",
+      "address": "5480 S Valley View Blvd, Las Vegas, NV 89118",
+      "phone": "(702) 555-0128",
+      "email": "quotes@vakamoving.com",
+      "url": "https://example.com/vaka-moving",
+      "membershipLevel": 1
+    },
+    {
+      "id": 6,
+      "name": "Lagi Construction & Design",
+      "tagline": "Building community, one project at a time",
+      "address": "6295 S Pecos Rd, Las Vegas, NV 89120",
+      "phone": "(702) 555-0119",
+      "email": "projects@lagiconstruction.com",
+      "url": "https://example.com/lagi-construction",
+      "membershipLevel": 2
+    },
+    {
+      "id": 7,
+      "name": "Kava & Co. Lounge",
+      "tagline": "A gathering place for the community",
+      "address": "953 E Sahara Ave, Las Vegas, NV 89104",
+      "phone": "(702) 555-0155",
+      "email": "hello@kavaandco.com",
+      "url": "https://example.com/kava-and-co",
+      "membershipLevel": 3
+    },
+    {
+      "id": 8,
+      "name": "Fetuila Events & Rentals",
+      "tagline": "Celebrations that feel like home",
+      "address": "3175 S Rainbow Blvd, Las Vegas, NV 89146",
+      "phone": "(702) 555-0186",
+      "email": "book@fetuilaevents.com",
+      "url": "https://example.com/fetuila-events",
+      "membershipLevel": 1
+    },
+    {
+      "id": 9,
+      "name": "Sina Boutique",
+      "tagline": "Island prints, everyday style",
+      "address": "4300 Meadows Ln, Las Vegas, NV 89107",
+      "phone": "(702) 555-0111",
+      "email": "shop@sinaboutique.com",
+      "url": "https://example.com/sina-boutique",
+      "membershipLevel": 1
+    }
+  ]
+}

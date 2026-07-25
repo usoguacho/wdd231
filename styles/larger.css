@@ -1,0 +1,100 @@
+@media screen and (min-width: 768px) {
+
+  header {
+    padding: 1rem 2rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    width: auto;
+    max-height: none;
+    overflow: visible;
+    order: 2;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 1.75rem;
+    margin: 0;
+  }
+
+  nav a {
+    padding: 0.35rem 0;
+    border-top: none;
+    position: relative;
+  }
+
+  nav a[aria-current="page"]::after,
+  nav a:hover::after,
+  nav a:focus-visible::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 2px;
+    background-color: var(--accent);
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+    padding: 2.5rem 2rem 4rem;
+  }
+
+  main > h1 {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    font-size: 2.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  main section.certificate {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  main section.about {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  main section.career {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  main section {
+    margin-bottom: 0;
+  }
+
+  .course-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 1.5rem 2.5rem;
+  }
+
+  .social {
+    margin-bottom: 0;
+    order: 1;
+  }
+
+  .copyright {
+    order: 2;
+  }
+
+  .last-modified {
+    order: 3;
+  }
+}

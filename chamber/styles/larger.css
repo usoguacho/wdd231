@@ -1,0 +1,91 @@
+@media screen and (min-width: 768px) {
+
+  header {
+    padding: 1rem 2rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    width: auto;
+    max-height: none;
+    overflow: visible;
+    order: 2;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 1.75rem;
+    margin: 0;
+  }
+
+  nav a {
+    padding: 0.35rem 0;
+    border-top: none;
+    position: relative;
+  }
+
+  nav a[aria-current="page"]::after,
+  nav a:hover::after,
+  nav a:focus-visible::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 2px;
+    background-color: var(--secondary);
+  }
+
+  main {
+    padding: 2.5rem 2rem 4rem;
+  }
+
+  .hero {
+    padding: 3rem 3rem;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+    max-width: 34ch;
+  }
+
+  .hero p {
+    max-width: 50ch;
+    font-size: 1.05rem;
+  }
+
+  .highlights {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .directory-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .directory-list.grid-view {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .business-card-body {
+    grid-template-columns: 96px 1fr;
+  }
+
+  .business-image {
+    width: 96px;
+    height: 96px;
+  }
+
+  footer {
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    text-align: left;
+    padding: 1.5rem 2.5rem;
+  }
+
+  .footer-meta {
+    text-align: right;
+  }
+}

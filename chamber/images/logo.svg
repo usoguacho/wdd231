@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="heroTitle">
+  <title id="heroTitle">Illustration of ocean waves meeting a desert mountain horizon at sunset</title>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B4E54"/>
+      <stop offset="55%" stop-color="#0F6B72"/>
+      <stop offset="100%" stop-color="#E8734A"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F4B183"/>
+      <stop offset="100%" stop-color="#E8734A"/>
+    </linearGradient>
+    <linearGradient id="waveFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A3F44"/>
+      <stop offset="100%" stop-color="#0A3438"/>
+    </linearGradient>
+    <linearGradient id="waveNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#082D31"/>
+      <stop offset="100%" stop-color="#06272A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect x="0" y="0" width="1200" height="500" fill="url(#sky)"/>
+
+  <!-- sun -->
+  <circle cx="880" cy="200" r="90" fill="url(#sun)" opacity="0.9"/>
+
+  <!-- distant mountain silhouette (Nevada desert) -->
+  <path d="M0 300 L120 230 L230 300 L340 200 L460 300 L600 240 L740 300 L900 210 L1040 300 L1200 250 L1200 340 L0 340 Z"
+        fill="#123B3F" opacity="0.85"/>
+
+  <!-- far wave band -->
+  <path d="M0 330 C 150 300, 300 360, 450 330 S 750 300, 900 330 S 1100 360, 1200 330 L1200 500 L0 500 Z"
+        fill="url(#waveFar)"/>
+
+  <!-- near wave band -->
+  <path d="M0 380 C 180 350, 320 410, 500 380 S 820 350, 1000 385 S 1150 410, 1200 385 L1200 500 L0 500 Z"
+        fill="url(#waveNear)"/>
+
+  <!-- foam highlight on nearest wave -->
+  <path d="M0 380 C 180 350, 320 410, 500 380 S 820 350, 1000 385 S 1150 410, 1200 385"
+        fill="none" stroke="#FAF6EF" stroke-width="3" opacity="0.35"/>
+
+  <!-- palm frond accent, upper left -->
+  <g opacity="0.5" transform="translate(60,40) rotate(15)">
+    <path d="M0 0 C 60 10, 120 40, 160 100" fill="none" stroke="#0B4E54" stroke-width="10" stroke-linecap="round"/>
+    <path d="M0 0 C -50 20, -90 60, -110 120" fill="none" stroke="#0B4E54" stroke-width="10" stroke-linecap="round"/>
+    <path d="M0 0 C 10 60, 5 110, -20 160" fill="none" stroke="#0B4E54" stroke-width="10" stroke-linecap="round"/>
+  </g>
+</svg>

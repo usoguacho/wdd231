@@ -1,6 +1,3 @@
-// Course data for the Web and Computer Programming Certificate.
-// completed is true for courses you have personally finished.
-
 const courses = [
     {
         subject: 'CSE',

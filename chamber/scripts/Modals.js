@@ -1,6 +1,3 @@
-// Wires up the "Learn More" buttons to open their matching <dialog>
-// // and the "Close" buttons inside each dialog to close it
-
 document.querySelectorAll("[data-modal-target]").forEach((button) => {
   button.addEventListener("click", () => {
     const dialog = document.querySelector(`#${button.dataset.modalTarget}`);

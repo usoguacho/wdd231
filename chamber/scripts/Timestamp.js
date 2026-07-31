@@ -1,3 +1,3 @@
-// Stamps the hidden timestamp field with the date/time the form was loaded
+// Stamps the hidden timestamp field
 
 document.querySelector("#timestamp").value = new Date().toISOString();

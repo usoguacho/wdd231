@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join | Pacific Islanders of Nevada Chamber of Commerce</title>
+  <meta name="description" content="Apply for membership with the Pacific Islanders of Nevada Chamber of Commerce.">
+  <meta name="author" content="Your Name">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/timestamp.js" defer></script>
+  <script src="scripts/modals.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <img src="images/logo.svg" alt="" width="42" height="42" class="logo">
+      <span class="site-name">Pacific Islanders of Nevada<br>Chamber of Commerce</span>
+    </div>
+    <button id="menuToggle" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="primaryNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" aria-current="page">Join</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Join the Chamber</h1>
+    <p class="join-intro">Complete the form below to apply for membership. Fields marked <span class="required-mark">*</span> are required.</p>
+
+    <div class="join-layout">
+
+      <form class="join-form" method="get" action="thankyou.html">
+
+        <label for="fname">First Name <span class="required-mark">*</span>
+          <input type="text" id="fname" name="fname" title="First Name" autocomplete="given-name" required>
+        </label>
+
+        <label for="lname">Last Name <span class="required-mark">*</span>
+          <input type="text" id="lname" name="lname" title="Last Name" autocomplete="family-name" required>
+        </label>
+
+        <label for="orgtitle">Your Title
+          <input type="text" id="orgtitle" name="orgtitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" placeholder="e.g. Marketing Director">
+        </label>
+
+        <label for="email">Email Address <span class="required-mark">*</span>
+          <input type="email" id="email" name="email" title="Email Address" autocomplete="email" placeholder="name@example.com" required>
+        </label>
+
+        <label for="phone">Mobile Phone <span class="required-mark">*</span>
+          <input type="tel" id="phone" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
+        </label>
+
+        <label for="orgname">Business/Organization Name <span class="required-mark">*</span>
+          <input type="text" id="orgname" name="orgname" title="Business or Organization Name" autocomplete="organization" required>
+        </label>
+
+        <label for="level">Membership Level
+          <select id="level" name="level" title="Membership Level">
+            <option value="np">NP Membership (Non-Profit — no fee)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label for="description">Business Description
+          <textarea id="description" name="description" title="Business Description" rows="5"></textarea>
+        </label>
+
+        <input type="hidden" id="timestamp" name="timestamp">
+
+        <button type="submit" class="cta">Submit Application</button>
+      </form>
+
+      <div class="membership-cards">
+
+        <div class="membership-card level-np">
+          <h2>NP Membership</h2>
+          <p class="price">No Fee</p>
+          <button type="button" class="modal-link" data-modal-target="dialogNp">Learn More</button>
+        </div>
+
+        <div class="membership-card level-bronze">
+          <h2>Bronze Membership</h2>
+          <p class="price">$25 / year</p>
+          <button type="button" class="modal-link" data-modal-target="dialogBronze">Learn More</button>
+        </div>
+
+        <div class="membership-card level-silver">
+          <h2>Silver Membership</h2>
+          <p class="price">$75 / year</p>
+          <button type="button" class="modal-link" data-modal-target="dialogSilver">Learn More</button>
+        </div>
+
+        <div class="membership-card level-gold">
+          <h2>Gold Membership</h2>
+          <p class="price">$150 / year</p>
+          <button type="button" class="modal-link" data-modal-target="dialogGold">Learn More</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Membership benefit -->
+
+    <dialog id="dialogNp" class="membership-dialog">
+      <h2>NP Membership</h2>
+      <p class="price">No Fee</p>
+      <ul>
+        <li>Listing in the online business directory</li>
+        <li>Access to monthly community newsletter</li>
+        <li>Invitation to open networking events</li>
+      </ul>
+      <button type="button" class="dialog-close" data-modal-close>Close</button>
+    </dialog>
+
+    <dialog id="dialogBronze" class="membership-dialog">
+      <h2>Bronze Membership</h2>
+      <p class="price">$25 / year</p>
+      <ul>
+        <li>Everything in NP Membership</li>
+        <li>Discounted tickets to chamber events</li>
+        <li>Access to member-only workshops</li>
+      </ul>
+      <button type="button" class="dialog-close" data-modal-close>Close</button>
+    </dialog>
+
+    <dialog id="dialogSilver" class="membership-dialog">
+      <h2>Silver Membership</h2>
+      <p class="price">$75 / year</p>
+      <ul>
+        <li>Everything in Bronze Membership</li>
+        <li>Business spotlight rotation on the home page</li>
+        <li>Priority booth placement at chamber events</li>
+      </ul>
+      <button type="button" class="dialog-close" data-modal-close>Close</button>
+    </dialog>
+
+    <dialog id="dialogGold" class="membership-dialog">
+      <h2>Gold Membership</h2>
+      <p class="price">$150 / year</p>
+      <ul>
+        <li>Everything in Silver Membership</li>
+        <li>Featured "Gold Member" badge in the directory</li>
+        <li>One complimentary sponsorship per year</li>
+        <li>Direct advertising placement in the newsletter</li>
+      </ul>
+      <button type="button" class="dialog-close" data-modal-close>Close</button>
+    </dialog>
+
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <p><strong>Pacific Islanders of Nevada Chamber of Commerce</strong></p>
+      <p>Las Vegas, NV</p>
+      <p>info@pinvchamber.org</p>
+      <p>(702) 555-0100</p>
+    </div>
+
+    <div class="social">
+      <a href="https://github.com/usoguacho" target="_blank" rel="noopener" aria-label="GitHub profile">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.99 3.24 9.22 7.74 10.72.57.1.78-.25.78-.55v-2.06c-3.15.68-3.81-1.34-3.81-1.34-.51-1.31-1.25-1.66-1.25-1.66-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.51-.29-5.15-1.26-5.15-5.6 0-1.24.44-2.25 1.16-3.04-.12-.29-.5-1.45.11-3.02 0 0 .95-.31 3.12 1.16a10.7 10.7 0 0 1 5.68 0c2.16-1.47 3.11-1.16 3.11-1.16.62 1.57.23 2.73.11 3.02.72.79 1.16 1.8 1.16 3.04 0 4.36-2.65 5.31-5.17 5.59.41.35.76 1.04.76 2.11v3.13c0 .3.21.66.79.55A11.26 11.26 0 0 0 23.25 11.75C23.25 5.48 18.27.5 12 .5Z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+      </a>
+      <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube channel">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.5v-7l6.3 3.5-6.3 3.5Z"/></svg>
+      </a>
+    </div>
+
+    <div class="footer-meta">
+      <p>WDD231 Class Project</p>
+      <p>Your Name</p>
+      <p>&copy; <span id="currentYear"></span> Pacific Islanders of Nevada Chamber of Commerce</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+
+</body>
+</html>

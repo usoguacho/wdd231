@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Checklist | Rooted Home</title>
+  <meta name="description" content="Confirmation page showing your submitted request for the Rooted Home efficiency checklist.">
+  <meta name="author" content="Sam Tuala">
+
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/checklist.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <img src="images/logo.svg" alt="" width="40" height="40" class="logo">
+      <span class="site-name">Rooted Home</span>
+    </div>
+    <button id="menuToggle" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="primaryNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="garden.html">Garden Guide</a></li>
+        <li><a href="energy.html" aria-current="page">Energy &amp; Budget</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="thankyou">
+      <h1>Your Checklist Is On Its Way</h1>
+      <p>Thanks for requesting the Rooted Home efficiency checklist. Here's what you submitted:</p>
+
+      <dl class="submission-summary">
+        <div class="summary-row">
+          <dt>Name</dt>
+          <dd id="outName"></dd>
+        </div>
+        <div class="summary-row">
+          <dt>Email</dt>
+          <dd id="outEmail"></dd>
+        </div>
+        <div class="summary-row">
+          <dt>Household Size</dt>
+          <dd id="outHousehold"></dd>
+        </div>
+        <div class="summary-row">
+          <dt>Submitted</dt>
+          <dd id="outTimestamp"></dd>
+        </div>
+      </dl>
+
+      <a class="cta" href="index.html">Back to Home</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <p><strong>Rooted Home</strong></p>
+      <p>A WDD 231 final project</p>
+    </div>
+
+    <div class="footer-meta">
+      <p>Your Name</p>
+      <p>&copy; <span id="currentYear"></span> Rooted Home</p>
+      <p id="lastModified"></p>
+      <p><a href="attributions.html">Attributions</a> &bull; <a href="https://youtube.com" target="_blank" rel="noopener">Video Walkthrough</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garden Guide | Rooted Home</title>
+  <meta name="description" content="Browse easy, high-value vegetables, herbs, and fruit to grow at home and cut your grocery bill.">
+  <meta name="author" content="Sam Tuala">
+
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+
+  <meta property="og:title" content="Garden Guide | Rooted Home">
+  <meta property="og:description" content="Browse easy, high-value vegetables, herbs, and fruit to grow at home and cut your grocery bill.">
+  <meta property="og:image" content="https://usoguacho.github.io/wdd231/final/images/og-image.png">
+  <meta property="og:url" content="https://usoguacho.github.io/wdd231/final/garden.html">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/garden.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <img src="images/logo.svg" alt="" width="40" height="40" class="logo">
+      <span class="site-name">Rooted Home</span>
+    </div>
+    <button id="menuToggle" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="primaryNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="garden.html" aria-current="page">Garden Guide</a></li>
+        <li><a href="energy.html">Energy &amp; Budget</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Garden Guide</h1>
+    <p class="page-intro">Sixteen easy-to-grow plants that can meaningfully cut your grocery bill. Filter by type, save favorites, and tap any plant for growing details.</p>
+
+    <div class="filter-bar" role="group" aria-label="Filter plants">
+      <button class="filter-btn active" data-filter="all" type="button">All</button>
+      <button class="filter-btn" data-filter="vegetable" type="button">Vegetables</button>
+      <button class="filter-btn" data-filter="herb" type="button">Herbs</button>
+      <button class="filter-btn" data-filter="fruit" type="button">Fruit</button>
+      <button class="filter-btn" data-filter="favorites" type="button">My Favorites</button>
+    </div>
+
+    <div id="plantGrid" class="plant-grid"></div>
+
+    <dialog id="plantDialog" class="plant-dialog">
+      <div id="plantDialogBody"></div>
+      <button id="plantDialogClose" type="button" class="dialog-close">Close</button>
+    </dialog>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <p><strong>Rooted Home</strong></p>
+      <p>A WDD 231 final project</p>
+    </div>
+
+    <div class="footer-meta">
+      <p>Your Name</p>
+      <p>&copy; <span id="currentYear"></span> Rooted Home</p>
+      <p id="lastModified"></p>
+      <p><a href="attributions.html">Attributions</a> &bull; <a href="https://youtube.com" target="_blank" rel="noopener">Video Walkthrough</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

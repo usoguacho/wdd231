@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy &amp; Budget Tips | Rooted Home</title>
+  <meta name="description" content="Low-cost home energy efficiency tips and a simple budgeting approach, plus a free checklist you can request.">
+  <meta name="author" content="Sam Tuala">
+
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+
+  <meta property="og:title" content="Energy & Budget Tips | Rooted Home">
+  <meta property="og:description" content="Low-cost home energy efficiency tips and a simple budgeting approach for your household.">
+  <meta property="og:image" content="https://usoguacho.github.io/wdd231/final/images/og-image.png">
+  <meta property="og:url" content="https://usoguacho.github.io/wdd231/final/energy.html">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/energyForm.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <img src="images/logo.svg" alt="" width="40" height="40" class="logo">
+      <span class="site-name">Rooted Home</span>
+    </div>
+    <button id="menuToggle" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="primaryNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="garden.html">Garden Guide</a></li>
+        <li><a href="energy.html" aria-current="page">Energy &amp; Budget</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Energy &amp; Budget Tips</h1>
+    <p class="page-intro">Small, low-cost changes that add up. Start with these, then request the full checklist below.</p>
+
+    <section class="tips-grid">
+      <div class="tip-card">
+        <h2>Seal drafts</h2>
+        <p>Weatherstripping and door sweeps cost a few dollars and can noticeably cut heating and cooling loss.</p>
+      </div>
+      <div class="tip-card">
+        <h2>Unplug idle electronics</h2>
+        <p>Chargers and electronics draw power even when off. A power strip makes it a one-switch habit.</p>
+      </div>
+      <div class="tip-card">
+        <h2>Track fixed vs. flexible spending</h2>
+        <p>Separate bills you can't change from spending you can adjust &mdash; that's where real savings live.</p>
+      </div>
+      <div class="tip-card">
+        <h2>Wash on cold</h2>
+        <p>Most laundry gets just as clean on a cold cycle, and it avoids most of the energy cost of washing.</p>
+      </div>
+    </section>
+
+    <section class="checklist-form-section">
+      <h2>Get the Free Efficiency Checklist</h2>
+      <p>Enter your info and we'll show you a printable starter checklist.</p>
+
+      <form class="checklist-form" method="get" action="checklist.html">
+        <label for="cname">Name
+          <input type="text" id="cname" name="cname" title="Name" autocomplete="name" required>
+        </label>
+
+        <label for="cemail">Email Address
+          <input type="email" id="cemail" name="cemail" title="Email Address" autocomplete="email" placeholder="name@example.com" required>
+        </label>
+
+        <label for="household">Household Size
+          <select id="household" name="household" title="Household Size">
+            <option value="1-2">1&ndash;2 people</option>
+            <option value="3-4">3&ndash;4 people</option>
+            <option value="5+">5+ people</option>
+          </select>
+        </label>
+
+        <input type="hidden" id="timestamp" name="timestamp">
+
+        <button type="submit" class="cta">Send My Checklist</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <p><strong>Rooted Home</strong></p>
+      <p>A WDD 231 final project</p>
+    </div>
+
+    <div class="footer-meta">
+      <p>Your Name</p>
+      <p>&copy; <span id="currentYear"></span> Rooted Home</p>
+      <p id="lastModified"></p>
+      <p><a href="attributions.html">Attributions</a> &bull; <a href="https://youtube.com" target="_blank" rel="noopener">Video Walkthrough</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

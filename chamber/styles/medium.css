@@ -1,0 +1,29 @@
+/* Medium screens 641px to 1024px  */
+
+@media screen and (min-width: 641px) {
+
+  
+  .discover-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "c1 c1"
+      "c2 c3"
+      "c4 c4"
+      "c5 c6"
+      "c7 c8";
+  }
+
+  .place-card figure {
+    border-radius: 8px;
+  }
+
+  /* Hover effect on gallery images */
+  .place-card img {
+    transition: transform 0.35s ease, filter 0.35s ease;
+  }
+
+  .place-card img:hover {
+    transform: scale(1.08);
+    filter: brightness(1.08) saturate(1.2);
+  }
+}
